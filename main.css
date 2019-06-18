@@ -1,0 +1,29 @@
+.box {
+  background-color: #0799d3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 0; /* needs a starting position */
+  position: relative; 
+  /*  An element with position: relative; is positioned relative to its normal position.
+Setting the top, property of this relatively-positioned element will cause it to be
+adjusted away from its normal position. */
+  animation-name: jump;
+ animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/* can write...
+animation: jump .5s alternate infinite ease-in-out;
+*/
+
+
+@keyframes jump {
+    from{
+      top: 0;
+    }
+    to {
+      top: 100px
+    }
+}
